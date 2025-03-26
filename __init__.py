@@ -1,7 +1,7 @@
 from aqt import QMenu, mw
 from aqt.qt import QAction
-from .config_dialog import open_config_dialog
-from .hooks import on_vocab_card_learned
+from .modules.config_dialog import open_config_dialog
+from .modules.hooks import on_vocab_card_learned
 import sys
 import os
 
