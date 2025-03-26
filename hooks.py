@@ -61,7 +61,7 @@ def get_field_index (field_name: str, note):
         index = field_names.index(field_name)
         return index
     else:
-        print(f"Field '{vocab_field_name}' not found in note type.")
+        print(f"Field '{field_name}' not found in note type.")
         return 0
 
 def bump_new_card_to_top(card):
