@@ -22,7 +22,6 @@ jobs:
       - name: Zip project files
         run: |
           mkdir bundle
-          cp -r modules bundle/modules
           cp manifest.json config.json bundle/
           cd bundle
           zip -r ../project-bundle.zip .
