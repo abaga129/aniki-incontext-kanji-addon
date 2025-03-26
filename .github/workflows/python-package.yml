@@ -25,10 +25,9 @@ jobs:
           cp -r modules bundle/modules
           cp manifest.json config.json __init__.py bundle/
           cd bundle
-          zip -r ../project-bundle.zip .
 
-      - name: Upload artifact
+      - name: Upload artifact (uncompressed folder)
         uses: actions/upload-artifact@v4
         with:
-          name: python-project-bundle
-          path: project-bundle.zip
+          name: anki-incontext-kanji-${{ github.run_number }}
+          path: bundle/
