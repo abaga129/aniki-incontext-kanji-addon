@@ -28,7 +28,7 @@ jobs:
           zip -r ../project-bundle.zip .
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: python-project-bundle
           path: project-bundle.zip
