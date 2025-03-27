@@ -65,6 +65,11 @@ def get_field_index (field_name: str, note):
         return 0
 
 def bump_new_card_to_top(card):
+    # unsuspend card
+    if card.queue == -1:
+        card.queue = card.type
+        mw.col.update_card(card)
+
     if card.type != 0:
         print("Card is not new.")
         return
